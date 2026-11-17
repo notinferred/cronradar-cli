@@ -1,0 +1,49 @@
+{
+  "name": "@cronradar/cli",
+  "version": "0.1.0",
+  "description": "Monitor scheduled commands without changing their output or exit status.",
+  "keywords": [
+    "cron",
+    "crontab",
+    "cli",
+    "monitoring",
+    "heartbeat",
+    "scheduled-jobs",
+    "systemd-timer",
+    "kubernetes-cronjob",
+    "missed-jobs",
+    "failed-jobs"
+  ],
+  "author": "CronRadar <support@cronradar.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notinferred/cronradar-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notinferred/cronradar-cli/issues"
+  },
+  "homepage": "https://docs.cronradar.com/cli",
+  "type": "module",
+  "bin": {
+    "cronradar": "bin/cronradar.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check bin/cronradar.mjs && node --check src/cli.mjs"
+  }
+}
