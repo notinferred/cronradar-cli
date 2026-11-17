@@ -31,7 +31,3 @@ jobs:
 
       - name: Publish
         run: npm publish --access public --provenance
-        env:
-          # Placeholder: only needed until Trusted Publishing is configured for
-          # notinferred/cronradar-cli (publish.yml) on npmjs.com; then delete this secret.
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
